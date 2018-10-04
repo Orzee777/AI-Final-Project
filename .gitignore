@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Untracked files:
+*.inc
+Makefile
+nbproject/*
