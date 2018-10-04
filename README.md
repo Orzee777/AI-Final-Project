@@ -1,4 +1,3 @@
-# AI-Final-Project
 Project for CS 340: Artificial Intelligence
 ===========================================
 Bradley Orzolek
