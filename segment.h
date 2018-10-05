@@ -1,7 +1,7 @@
 // Bradley Orzolek
 // CS340 Final AI Project
 // segment.h
-// Modified 10/2/18
+// Modified 10/4/18
 
 #ifndef SEGMENT_H
 #define SEGMENT_H

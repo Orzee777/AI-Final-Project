@@ -1,24 +1,24 @@
 // Bradley Orzolek
 // CS340 Final AI Project
-// neuralNetwork.h
-// Modified 10/2/18
+// NeuralNetwork.h
+// Modified 10/4/18
 
-#ifndef NEURALNETWORK_H
-#define NEURALNETWORK_H
+#ifndef NeuralNetwork_H
+#define NeuralNetwork_H
 
 #include <vector>
 #include <fstream>
 #include <cmath>
 
-#include "../Matrix/Matrix.h"
+#include "Matrix/matrix.h"
 
 using namespace std;
 
 class NeuralNetwork {
 public:
     
-    neuralNetwork(vector<int> neurons, double learningRate);
-    neuralNetwork(const char *filePath);
+    NeuralNetwork(vector<int> neurons, double learningRate);
+    NeuralNetwork(const char *filePath);
 
     Matrix<double> computeOutput(vector<double> input);
     void learn(vector<double> expectedOutput);
@@ -48,4 +48,4 @@ private:
     
 };
 
-#endif /* NEURALNETWORK_H */
+#endif /* NeuralNetwork_H */
