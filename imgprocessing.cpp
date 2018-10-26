@@ -31,3 +31,9 @@ Mat preprocessImage(Mat& sourceImage)
 
 	return outImage; // return final image (thresholded, dilated, eroded)
 }
+
+////
+//// Used for training
+////
+
+string fileName = "";
