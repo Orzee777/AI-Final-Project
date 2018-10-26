@@ -11,6 +11,8 @@
 #include "saveData.h"
 #include "neuralNetwork.h"
 
+// opencv stuff goes here
+
 using namespace std;
 
 int main() {
