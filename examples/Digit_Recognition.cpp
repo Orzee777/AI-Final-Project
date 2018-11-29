@@ -10,8 +10,9 @@
 #include <cstdlib>
 #include <vector>
 #include <cmath>
+#include <string>
 #include <time.h>
-//#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <chai.h>
 #include <loadmnist.h>
 
@@ -96,7 +97,11 @@ int main()
     }
   }
 
+  string input;
+  
   std::cout << "Accuracy: " << (float)num_correct / num_tests * 100.0f << "%" << std::endl;
+  std::cout << "press enter to continue..." << std::endl;
+  std::cin >> input;
 
   // Create the main window
   sf::RenderWindow window(sf::VideoMode(280, 280), "Handwriting Recognition");

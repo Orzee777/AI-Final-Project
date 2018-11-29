@@ -12,6 +12,7 @@
 #include <cmath>
 #include <time.h>
 #include <chai.h>
+#include <string>
 #include <loadmnist.h>
 
 unsigned int MaxElement(std::vector<float> input);
@@ -95,7 +96,17 @@ int main()
     }
   }
 
+  char input;
+
   std::cout << "Accuracy: " << (float)num_correct / num_tests * 100.0f << "%" << std::endl;
+
+std::cout << "Press enter to exit..." << std::endl;
+std::string name;
+getline(std::cin, name);
+
+if (name.empty()) {
+    /* ... nothing entered ... */
+}
 
 	return 0;
 }

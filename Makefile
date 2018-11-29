@@ -5,7 +5,7 @@ make:
 	mkdir bin; cd bin; $(CC) -I ../include -c $(TARGETS) -O3; cd ..
 
 clean:
-	rm bin/*.o
+	rm bin/*.o; rmdir bin; rm test.exe
 	
 test:
-	$(CC) -I include examples/MNIST_TEST.cpp bin/*.o -o test -O3
+	$(CC) -I include examples/Digit_Recognition.cpp bin/*.o -o test -O3
